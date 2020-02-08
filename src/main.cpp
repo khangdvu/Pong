@@ -5,13 +5,11 @@
 
 using namespace sf;
 
-int windowWidth;
-int windowHeight;
 
 int main() 
 {
-	windowWidth = 1024;
-	windowHeight = 768;
+	int windowWidth = 1024;
+	int windowHeight = 768;
 
 	Bat bat(windowWidth / 2, windowHeight - 20);
 
