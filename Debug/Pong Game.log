@@ -1,0 +1,6 @@
+﻿  bat_class.cpp
+  main.cpp
+C:\Users\adagi\Desktop\Projects\Pong Game\src\main.cpp(12,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\adagi\Desktop\Projects\Pong Game\src\main.cpp(12,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  Pong Game.vcxproj -> C:\Users\adagi\Desktop\Projects\Pong Game\Debug\Pong Game.exe
