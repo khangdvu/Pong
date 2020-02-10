@@ -3,8 +3,7 @@
 
 using namespace sf;
 
-class Bat 
-{
+class Bat {
 private:
 	Vector2f position;
 	RectangleShape batShape;

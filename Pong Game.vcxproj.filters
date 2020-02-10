@@ -21,6 +21,9 @@
     <ClCompile Include="src\bat_class.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\ball_class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="openal32.dll" />
@@ -39,5 +42,12 @@
     <ClInclude Include="headers\bat_class.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\ball_class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="assets\p5font.ttf" />
+    <Font Include="assets\Anyfreak.ttf" />
   </ItemGroup>
 </Project>
