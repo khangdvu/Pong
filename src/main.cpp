@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include <sstream>
 #include <cstdlib>
+#include <sstream>
 
 using namespace sf;
 
@@ -18,7 +19,6 @@ int main(){
     int ballRadius = ball.getRadius();
 
     int score = 0;
-    int lives = 3;
 
     Text hud;
     Font font;
@@ -61,7 +61,7 @@ int main(){
         if (ballPosition.top > windowHeight) {
             ball.hitBottom();
 
-            lives--;
+            score = 0;
         }
 
         if (ballPosition.left < 0 || ballPosition.left + 2*ballRadius > windowWidth) {
@@ -75,6 +75,7 @@ int main(){
 
         if (ballPosition.intersects(bat.getPosition())) {
             ball.reboundBatOrTop();
+            score++;
         }
 
         /*
@@ -83,11 +84,17 @@ int main(){
 
         bat.update();
         ball.update();
+
+        std::stringstream scoreString;
+        scoreString << "Score: " << score;
+        hud.setString(scoreString.str());
+
         // Clear everything from the last frame
         window.clear(Color(26, 128, 182, 255));
 
         window.draw(bat.getShape());
         window.draw(ball.getShape());
+        window.draw(hud);
 
 
         // Show everything we just drew

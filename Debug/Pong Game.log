@@ -1,2 +1,17 @@
-﻿  ball_class.cpp
-  Pong Game.vcxproj -> C:\Users\adagi\Desktop\Projects\Pong Game\Debug\Pong Game.exe
+﻿  main.cpp
+C:\Users\adagi\Desktop\Projects\Pong Game\src\main.cpp(17,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\adagi\Desktop\Projects\Pong Game\src\main.cpp(17,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\adagi\Desktop\Projects\Pong Game\src\main.cpp(18,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\adagi\Desktop\Projects\Pong Game\src\main.cpp(19,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\adagi\Desktop\Projects\Pong Game\src\main.cpp(76,12): error C2664: 'bool sf::Rect<float>::intersects(const sf::Rect<float> &) const': cannot convert argument 1 from 'T' to 'const sf::Rect<float> &'
+          with
+          [
+              T=float
+          ]
+C:\Users\adagi\Desktop\Projects\Pong Game\src\main.cpp(76,12): message : Reason: cannot convert from 'T' to 'const sf::Rect<float>'
+          with
+          [
+              T=float
+          ]
+C:\Users\adagi\Desktop\Projects\Pong Game\src\main.cpp(76,12): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\adagi\Desktop\Projects\Pong Game\External\include\SFML\Graphics\Rect.hpp(136,10): message : see declaration of 'sf::Rect<float>::intersects'
